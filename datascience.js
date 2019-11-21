@@ -22,19 +22,43 @@ Highcharts.chart('container2', {
         data: [{
             name: '<a href="table.html">DEPLOYED</a>',
             y: 800,
-          z: 4
+          z: 4,
+          events:{
+            click:function(){
+                window.location.href="./table.html"
+               
+            }
+        }
         }, {
             name: '<a href="table.html">TRAINING</a>',
             y: 1000,
-          z: 10
+          z: 10,
+          events:{
+            click:function(){
+                window.location.href="./table.html"
+               
+            }
+        }
         }, {
             name: '<a href="table.html">TERMINATED</a>',
             y:200,
-           z: 3
+           z: 3,
+           events:{
+            click:function(){
+                window.location.href="./table.html"
+               
+            }
+        }
         }, {
             name: '<a href="table.html">BENCH</a>',
             y: 700,
-        z: 7
+        z: 7,
+        events:{
+            click:function(){
+                window.location.href="./table.html"
+               
+            }
+        }
         } ]
     }]
 });
