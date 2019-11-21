@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script>
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	exportEnabled: true,
+	animationEnabled: true,
+	title:{
+		text: "RESPECTIVE TRAINERS INFO"
+	},
+	legend:{
+		cursor: "pointer",
+		itemclick: explodePie
+	},
+	data: [{
+		type: "pie",
+		showInLegend: true,
+		toolTipContent: "<b>{name}</b>-{y} : </br>{ list }</br> ",
+		indexLabel: "{course}: {y}",
+		        dataPoints : [{
+            course:'JAVAFULL',
+            name: 'JAVAFULL',
+            z: 551500,
+            y: 5,
+            list: [[
+                ' Tr01:VIKAS'],
+                [' Tr02:GIRIDHAR'],
+                [' Tr03:ROHIT'],
+                [' Tr04:RAHUL'],
+                [' Tr05:SUDHANSHU']
+            ]
+            
+        }, {
+            course:'MEANSTACK',
+            name: 'MEANSTACK',
+            z: 505370,
+            y: 3,
+            list: [[
+                ' Tr01:CHANDAN'],
+                [' Tr02:JASMINE'],
+                [' Tr03:RAJSHEKHAR']
+            ]
+
+
+        }, {
+            course:'DATASCIENCE',
+            name: 'DATASCIENCE',
+            z: 212685,
+            y: 2,
+            list: [[
+                ' Tr01:TRISTOTA'],
+                [' Tr02:asha'],
+                
+            ]
+        }, {
+           course:'.NET',
+            name: '.NET',
+            z: 108867,
+            y: 1,
+            list: [[
+                ' Tr01:darshan'],
+               
+            ]
+        }]
+   
+
+			// { y: 1, name: "fulljava",Sname:"deeksha", exploded: true },
+			// { y: 2, name: "fulljava", Sname:"rakshith"},
+			// { y: 3, name: "fullmean", Sname:"meeera"},
+			// { y: 4, name: "datascience" , Sname:"rukku"}
+			
+		
+    }],
+   
+    
+});
+chart.render();
+}
+
+function explodePie (e) {
+	if(typeof (e.dataSeries.dataPoints[e.dataPointIndex].exploded) === "undefined" || !e.dataSeries.dataPoints[e.dataPointIndex].exploded) {
+		e.dataSeries.dataPoints[e.dataPointIndex].exploded = true;
+	} else {
+		e.dataSeries.dataPoints[e.dataPointIndex].exploded = false;
+	}
+	e.chart.render();
+
+}
+</script>
+</head>
+<body>
+<div id="chartContainer" style="height: 370px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>
