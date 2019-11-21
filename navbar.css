@@ -1,13 +1,4 @@
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  }
-  
-  #chartdiv {
-    width: 100%;
-    height: 500px;
-  }
-
-  .navbar {
+.navbar {
     width: 100%;
     background-color: #555;
     overflow: auto;
@@ -23,7 +14,7 @@ body {
   }
   
   .navbar a:hover {
-    background-color: #000;
+    background-color: rgb(233, 224, 224);
   }
   
   .active {
