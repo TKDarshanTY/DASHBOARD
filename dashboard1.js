@@ -28,7 +28,7 @@ pieSeries.slices.template
 pieSeries.alignLabels = false;
 pieSeries.labels.template.bent = true;
 pieSeries.labels.template.radius = 3;
-pieSeries.labels.template.padding(0,0,0,0);
+pieSeries.labels.template.padding(0, 0, 0, 0);
 
 pieSeries.ticks.template.disabled = true;
 
@@ -49,8 +49,8 @@ chart.legend = new am4charts.Legend();
 
 chart.data = [{
   "course": "JAVA FULL STACK",
-  "litres": 20
-},{
+  "litres": 20,
+}, {
   "course": "MEAN STACK",
   "litres": 10
 }, {

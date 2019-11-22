@@ -15,7 +15,7 @@ Highcharts.chart('container', {
             //  +'Population density (people per square km): <b>{point.z}</b><br/>'
     },
     series: [{
-        minPointSize: 10,
+        minPointSize: 50,
         innerSize: '20%',
         zMin: 0,
         name: 'JAVA FULLSTACK',

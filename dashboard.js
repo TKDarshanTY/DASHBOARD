@@ -13,7 +13,7 @@ pieSeries.dataFields.category = "course";
 chart.innerRadius = am4core.percent(30);
 
 // Put a thick white border around each Slice
-pieSeries.slices.template.stroke = am4core.color("#fff");
+pieSeries.slices.template.stroke = am4core.color("#ff4040");
 pieSeries.slices.template.strokeWidth = 2;
 pieSeries.slices.template.strokeOpacity = 1;
 pieSeries.slices.template
